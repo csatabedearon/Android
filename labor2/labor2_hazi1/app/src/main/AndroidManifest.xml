@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Labor2_hazi1"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityThree"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTwo"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

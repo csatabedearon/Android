@@ -1,0 +1,79 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Product Form"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Code:" />
+        <EditText
+            android:id="@+id/inputProductCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name:" />
+        <EditText
+            android:id="@+id/inputProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Price:" />
+        <EditText
+            android:id="@+id/inputProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/addProductButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="ADD PRODUCT" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/showProductsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW PRODUCTS"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="" />
+</TableLayout>
